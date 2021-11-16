@@ -1,0 +1,3 @@
+# SiLabs EC3 debug adapter
+SUBSYSTEM=="usb", ATTR{idVendor}=="10c4", ATTR{idProduct}=="8044", MODE="0666", GROUP="plugdev"
+KERNEL=="hidraw*", ATTRS{busnum}=="1", ATTRS{idVendor}=="10c4", ATTRS{idProduct}=="8044", MODE="0666", GROUP="plugdev"
